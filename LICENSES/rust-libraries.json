@@ -1,0 +1,185 @@
+{
+ "direct": [
+  {
+   "name": "anyhow",
+   "version": "1.0.104",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/dtolnay/anyhow"
+  },
+  {
+   "name": "caseless",
+   "version": "0.2.2",
+   "licence": "MIT",
+   "url": "https://github.com/unicode-rs/rust-caseless"
+  },
+  {
+   "name": "chrono",
+   "version": "0.4.45",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/chronotope/chrono"
+  },
+  {
+   "name": "ctrlc",
+   "version": "3.5.2",
+   "licence": "MIT/Apache-2.0",
+   "url": "https://github.com/Detegr/rust-ctrlc.git"
+  },
+  {
+   "name": "eframe",
+   "version": "0.37.0",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/emilk/egui/tree/main/crates/eframe"
+  },
+  {
+   "name": "half",
+   "version": "2.7.1",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/VoidStarKat/half-rs"
+  },
+  {
+   "name": "image",
+   "version": "0.25.10",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/image-rs/image"
+  },
+  {
+   "name": "libloading",
+   "version": "0.9.0",
+   "licence": "ISC",
+   "url": "https://github.com/nagisa/rust_libloading/"
+  },
+  {
+   "name": "ort",
+   "version": "2.0.0-rc.14",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/pykeio/ort"
+  },
+  {
+   "name": "png",
+   "version": "0.18.1",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/image-rs/image-png"
+  },
+  {
+   "name": "rayon",
+   "version": "1.11.0",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/rayon-rs/rayon"
+  },
+  {
+   "name": "regex",
+   "version": "1.13.1",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/rust-lang/regex"
+  },
+  {
+   "name": "reqwest",
+   "version": "0.13.5",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/seanmonstar/reqwest"
+  },
+  {
+   "name": "rfd",
+   "version": "0.17.2",
+   "licence": "MIT",
+   "url": "https://github.com/PolyMeilex/rfd"
+  },
+  {
+   "name": "same-file",
+   "version": "1.0.6",
+   "licence": "Unlicense/MIT",
+   "url": "https://github.com/BurntSushi/same-file"
+  },
+  {
+   "name": "serde",
+   "version": "1.0.229",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/serde-rs/serde"
+  },
+  {
+   "name": "serde_json",
+   "version": "1.0.154",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/serde-rs/json"
+  },
+  {
+   "name": "sha2",
+   "version": "0.10.9",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/RustCrypto/hashes"
+  },
+  {
+   "name": "swash",
+   "version": "0.2.10",
+   "licence": "Apache-2.0 OR MIT",
+   "url": "https://github.com/dfrg/swash"
+  },
+  {
+   "name": "tiff",
+   "version": "0.11.3",
+   "licence": "MIT",
+   "url": "https://github.com/image-rs/image-tiff"
+  },
+  {
+   "name": "toml",
+   "version": "0.8.23",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/toml-rs/toml"
+  },
+  {
+   "name": "unicode-normalization",
+   "version": "0.1.25",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/unicode-rs/unicode-normalization"
+  },
+  {
+   "name": "url",
+   "version": "2.5.8",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/servo/rust-url"
+  }
+ ],
+ "closure_count": 412,
+ "closure_licences": [
+  "(MIT OR Apache-2.0) AND OFL-1.1 AND Ubuntu-font-1.0",
+  "(MIT OR Apache-2.0) AND Unicode-3.0",
+  "0BSD OR MIT OR Apache-2.0",
+  "Apache-2.0",
+  "Apache-2.0 AND ISC",
+  "Apache-2.0 AND MIT",
+  "Apache-2.0 OR GPL-2.0-only",
+  "Apache-2.0 OR ISC OR MIT",
+  "Apache-2.0 OR MIT",
+  "Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT",
+  "Apache-2.0/MIT",
+  "BSD-2-Clause OR Apache-2.0 OR MIT",
+  "BSD-3-Clause",
+  "BSD-3-Clause OR Apache-2.0",
+  "BSD-3-Clause OR MIT OR Apache-2.0",
+  "BSL-1.0",
+  "CDLA-Permissive-2.0",
+  "ISC",
+  "ISC AND (Apache-2.0 OR ISC)",
+  "ISC AND (Apache-2.0 OR ISC) AND Apache-2.0 AND MIT AND BSD-3-Clause AND (Apache-2.0 OR ISC OR MIT) AND (Apache-2.0 OR ISC OR MIT-0)",
+  "MIT",
+  "MIT / Apache-2.0",
+  "MIT OR Apache-2.0",
+  "MIT OR Apache-2.0 OR LGPL-2.1-or-later",
+  "MIT OR Apache-2.0 OR Zlib",
+  "MIT OR Zlib OR Apache-2.0",
+  "MIT/Apache-2.0",
+  "Unicode-3.0",
+  "Unlicense OR MIT",
+  "Unlicense/MIT",
+  "Zlib",
+  "Zlib OR Apache-2.0 OR MIT"
+ ],
+ "runtime": {
+  "name": "ONNX Runtime",
+  "version": "1.31.0",
+  "licence": "MIT",
+  "holder": "Microsoft Corporation",
+  "url": "https://onnxruntime.ai",
+  "note": "Loaded at run time (libonnxruntime); not linked into the program."
+ }
+}

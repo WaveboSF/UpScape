@@ -1,0 +1,4 @@
+# Release archives are attached to GitHub Releases, never committed.
+*.tar.gz
+*.zip
+*.sha256
