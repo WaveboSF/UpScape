@@ -53,6 +53,13 @@ Full installation, GPU setup, checksum verification and troubleshooting: [INSTAL
 - Use a GPU when available: DirectML on Windows, CUDA 13 and cuDNN 9 on Linux with NVIDIA;
   CPU processing is available on both systems.
 
+## Inspiration and thanks
+
+[Upscayl](https://github.com/upscayl/upscayl) was the original spark for UpScape.
+
+A heartfelt thank you to the Upscayl team and all contributors for this wonderful project,
+for sharing your work with the community, and for inspiring us to develop UpScape.
+
 ## Models and licences
 
 The package includes prepared models from Real-ESRGAN and 4x-HFA2k. Original model weights
