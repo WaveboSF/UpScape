@@ -1,4 +1,15 @@
-# Release archives are attached to GitHub Releases, never committed.
+# Program downloads and checksums belong to GitHub Releases.
 *.tar.gz
 *.zip
+*.exe
 *.sha256
+
+# Local publishing tools, duplicate guide, test images and superseded beta material.
+/upload.sh
+/readme.html
+/single_image_grayscale*
+/docs/screenshot.png
+/docs/RELEASE_NOTES_0.90.32-beta.md
+
+# Local session handovers are not part of the public download documentation.
+/HANDOVER*.md

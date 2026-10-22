@@ -137,9 +137,15 @@
    "version": "2.5.8",
    "licence": "MIT OR Apache-2.0",
    "url": "https://github.com/servo/rust-url"
+  },
+  {
+   "name": "windows",
+   "version": "0.62.2",
+   "licence": "MIT OR Apache-2.0",
+   "url": "https://github.com/microsoft/windows-rs"
   }
  ],
- "closure_count": 412,
+ "closure_count": 417,
  "closure_licences": [
   "(MIT OR Apache-2.0) AND OFL-1.1 AND Ubuntu-font-1.0",
   "(MIT OR Apache-2.0) AND Unicode-3.0",
@@ -176,10 +182,10 @@
  ],
  "runtime": {
   "name": "ONNX Runtime",
-  "version": "1.31.0",
+  "version": "1.31.0 (Linux), 1.24.4 with DirectML (Windows)",
   "licence": "MIT",
   "holder": "Microsoft Corporation",
   "url": "https://onnxruntime.ai",
-  "note": "Loaded at run time (libonnxruntime); not linked into the program."
+  "note": "Loaded at run time; not linked into the program. The Windows package adds Microsoft's DirectML library 1.15.4 (its own licence, in LICENSES)."
  }
 }
