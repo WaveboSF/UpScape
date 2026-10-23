@@ -5,6 +5,8 @@ Native Rust desktop application for AI enlargement of microscope and object imag
 > **Windows GPU / DirectML issue (v1.01):** GPU processing through DirectML still has
 > known problems. For now, select **CPU** in **Settings > Setup... > Device**.
 > A fix is planned for **v1.02**.
+> Linux GPU processing uses **NVIDIA CUDA 13 with cuDNN 9**, a different backend from
+> Windows DirectML.
 
 ## Downloads
 
