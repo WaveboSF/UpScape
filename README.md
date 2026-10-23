@@ -5,6 +5,10 @@ UpScape is a native Rust desktop application for Windows and Linux.
 
 **Current release: [UpScape v1.01](https://github.com/WaveboSF/UpScape/releases/tag/v1.01).**
 
+> **Windows GPU / DirectML issue (v1.01):** GPU processing through DirectML still has
+> known problems. For now, select **CPU** in **Settings > Setup... > Device**.
+> A fix is planned for **v1.02**.
+
 ## Download
 
 | System | Download | Size |

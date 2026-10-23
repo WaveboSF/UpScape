@@ -2,6 +2,10 @@
 
 Native Rust desktop application for AI enlargement of microscope and object images.
 
+> **Windows GPU / DirectML issue (v1.01):** GPU processing through DirectML still has
+> known problems. For now, select **CPU** in **Settings > Setup... > Device**.
+> A fix is planned for **v1.02**.
+
 ## Downloads
 
 - **Windows 10/11 x64:** `UpScape-1.01-windows-x64-setup.exe` (505 MB).
