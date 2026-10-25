@@ -38,28 +38,25 @@ at least eight verified physical CPU cores are required and a warning is shown.
 - A larger watermark editor with installed fonts, size/position/rotation controls,
   color palettes and direct manipulation; improved window-state handling.
 
-See the [1.08 release notes](docs/RELEASE_NOTES_1.08.md) for validation and limits.
+See the [1.08 release notes](docs/RELEASE_NOTES_1.08.md) for download details.
 
-## Hardware and current limits
+## Platform support
 
 | Platform | CPU processing | Optional GPU processing |
 |---|---|---|
 | Windows x64 | Included | DirectML with a compatible DirectX 12 adapter and driver; NVIDIA, AMD or Intel |
 | Linux x86-64 | Included | NVIDIA CUDA 13 with cuDNN 9; these optional system libraries are required for CUDA |
 
-Linux CUDA Float32 output was compared with CPU on RTX 5090 and RTX 4090 across
-six bundled models, denoising, TTA and tile-edge cases. All sixteen comparisons
-passed the existing tolerance, with a maximum difference of one 16-bit level.
-Two Fast/automatic Float16 runs completed with differences up to two 8-bit levels
-and cuDNN plan diagnostics. Float16 has no established numerical acceptance bound
-in these checks; select Float32 when close CPU agreement matters. These small
-checks are not a speed benchmark or a guarantee for every image and driver.
-
-Windows includes the DirectML correction from the earlier releases; a fresh
-1.08 DirectML image comparison has not been completed. If a GPU job fails or
-produces unexpected output, select CPU and retain the processing log.
 Linux AMD/Intel GPU execution and Windows CUDA are not provided by these builds.
 On Wayland, use **Open image**; drag-and-drop remains limited.
+
+## Contributors
+
+UpScape is developed and maintained by [S.F. / WaveboSF](https://github.com/WaveboSF).
+Development has been assisted by **Anthropic Claude** and **OpenAI Codex**.
+We acknowledge both AI tools for their contributions to implementation,
+troubleshooting, testing and documentation. Project decisions and release
+responsibility remain with the maintainer.
 
 ## Models, licences and acknowledgements
 

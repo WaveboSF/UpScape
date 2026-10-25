@@ -55,10 +55,6 @@ Keep all installed DLLs, data, models and notices together. Settings are under
 `%LOCALAPPDATA%\upscape`. Use Apps & features or the Start-menu uninstaller for
 removal. It asks before removing user settings and downloaded models.
 
-DirectML is the Windows GPU backend and uses Float32 graphs. If a GPU result is
-unexpected or a job fails, choose CPU in **Settings > Setup > Device** and retain
-the processing log. A fresh 1.08 DirectML image-comparison campaign remains open.
-
 ## Linux
 
 1. Verify and unpack the archive:
@@ -150,8 +146,6 @@ licence restrictions still apply. See [acknowledgements](LICENSES/ACKNOWLEDGEMEN
   unpack the verified Linux archive again. Start Linux through `UpScape.sh`.
 - Missing CUDA/cuDNN: select CPU, check System info and the log, and correct the
   optional system libraries before retrying GPU processing.
-- The bounded Linux CUDA checks and Float16 caveat are described in the
-  [release notes](docs/RELEASE_NOTES_1.08.md).
 
 Images are processed locally. UpScape uploads no images and disables ONNX Runtime
 telemetry before loading it. The Windows DirectML library retains Microsoft's
