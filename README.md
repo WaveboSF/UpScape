@@ -1,92 +1,84 @@
 # UpScape
 
-AI image enlargement for scanning-electron-microscope images and photographs of objects.
-UpScape is a native Rust desktop application for Windows and Linux.
+**A desktop image upscaler for Windows and Linux.** Enlarge photos and other
+images with AI or classical filters, blend their results, and compare alternatives
+before saving. Microscopy and object images are among its uses.
 
-**Current release: [UpScape v1.01](https://github.com/WaveboSF/UpScape/releases/tag/v1.01).**
+**[Download UpScape 1.08](https://github.com/WaveboSF/UpScape/releases/tag/v1.08)**
 
-> **Windows GPU / DirectML issue (v1.01):** GPU processing through DirectML still has
-> known problems. For now, select **CPU** in **Settings > Setup... > Device**.
-> A fix is planned for **v1.02**.
-> Linux GPU processing uses **NVIDIA CUDA 13 with cuDNN 9**, a different backend from
-> Windows DirectML.
-
-## Download
-
-| System | Download | Size |
+| Platform | Download | Checksum |
 |---|---|---|
-| Windows 10/11, 64-bit | [Windows installer](https://github.com/WaveboSF/UpScape/releases/download/v1.01/UpScape-1.01-windows-x64-setup.exe) | 505 MB |
-| Linux x86-64, glibc 2.43 or newer | [Linux archive](https://github.com/WaveboSF/UpScape/releases/download/v1.01/UpScape-1.01-linux-x86_64.tar.gz) | 676 MB |
+| Windows 10/11, x64 | [Installer](https://github.com/WaveboSF/UpScape/releases/download/v1.08/UpScape-1.08-windows-x64-setup.exe) | [SHA-256](https://github.com/WaveboSF/UpScape/releases/download/v1.08/UpScape-1.08-windows-x64-setup.exe.sha256) |
+| Linux, x86-64, glibc 2.43+ | [Archive](https://github.com/WaveboSF/UpScape/releases/download/v1.08/UpScape-1.08-linux-x86_64.tar.gz) | [SHA-256](https://github.com/WaveboSF/UpScape/releases/download/v1.08/UpScape-1.08-linux-x86_64.tar.gz.sha256) |
 
-Each download includes the program, its runtime libraries, the redistributable prepared
-AI models and their licence notices. Download the file for your system; no separate models
-archive or Python installation is needed.
+Each download includes the program, its inference runtime, seven redistributable
+original weight files and six prepared model bundles. The baseline works offline;
+no separate model pack or Python installation is required.
+Read [installation and requirements](INSTALL.md) before downloading.
 
-SHA-256 checksums are attached to the [release](https://github.com/WaveboSF/UpScape/releases/tag/v1.01).
-The automatically generated **Source code** archives contain this repository's documentation,
-not the desktop application.
+## Blend and Variants
 
-## First start
+**Blend** lets you mix the AI result with the original or a classical filter,
+controlling how much of the processed image you keep. Compare the views and
+adjust the share before saving.
 
-**Windows:** run the installer, then start UpScape from the Start menu or desktop shortcut.
-The installer is not code-signed, so Windows SmartScreen may display a warning. It includes
-the Microsoft Visual C++ runtime and can download the model weights during installation.
+**Variants** helps you compare model and blend choices for the same image.
+It can require substantial processing time and memory. Without a usable GPU,
+at least eight verified physical CPU cores are required and a warning is shown.
 
-**Linux:** unpack the archive and start the launcher:
+## What changed since 1.01
 
-```bash
-tar -xzf UpScape-1.01-linux-x86_64.tar.gz
-cd UpScape-1.01-linux-x86_64
-./UpScape.sh
-```
+- Complete offline baseline and expanded library licence texts and model credits.
+- Improved GPU handling, DirectML fixes, CPU thread limits that leave capacity
+  for the OS/UI, and hardware prerequisites under **Info > System info**.
+- Eight saved setups, S1-S8, and a clearer Batch workbench with thumbnails,
+  selected files and reusable processing settings.
+- Easier ROI selection, cropping and transparent cutouts; more flexible Save
+  formats and filename templates.
+- A larger watermark editor with installed fonts, size/position/rotation controls,
+  color palettes and direct manipulation; improved window-state handling.
 
-Keep the unpacked folder together. Optionally run `./install-desktop-icon.sh` to create
-a desktop shortcut and applications-menu entry.
+See the [1.08 release notes](docs/RELEASE_NOTES_1.08.md) for validation and limits.
 
-In **Settings > Setup...**, choose a device and use **Download missing** if model weights
-are missing. Downloads go to the models' publishers and are checked by SHA-256. Then open
-an image, choose a model and enlargement factor, click **Upscale**, compare and save.
+## Hardware and current limits
 
-Full installation, GPU setup, checksum verification and troubleshooting: [INSTALL.md](INSTALL.md).
+| Platform | CPU processing | Optional GPU processing |
+|---|---|---|
+| Windows x64 | Included | DirectML with a compatible DirectX 12 adapter and driver; NVIDIA, AMD or Intel |
+| Linux x86-64 | Included | NVIDIA CUDA 13 with cuDNN 9; these optional system libraries are required for CUDA |
 
-## Features
+Linux CUDA Float32 output was compared with CPU on RTX 5090 and RTX 4090 across
+six bundled models, denoising, TTA and tile-edge cases. All sixteen comparisons
+passed the existing tolerance, with a maximum difference of one 16-bit level.
+Two Fast/automatic Float16 runs completed with differences up to two 8-bit levels
+and cuDNN plan diagnostics. Float16 has no established numerical acceptance bound
+in these checks; select Float32 when close CPU agreement matters. These small
+checks are not a speed benchmark or a guarantee for every image and driver.
 
-- Compare the original, a classical filter, the AI result and their blend with shared zoom
-  and position; use a divider or a variants grid to judge the result.
-- Choose the final enlargement factor and blend weight, or process a selected region.
-- Preserve 16-bit greyscale TIFF data and record the result's processing provenance.
-- Process a folder with shared settings and save recurring configurations in four setups.
-- Use a GPU when available: DirectML on Windows, CUDA 13 and cuDNN 9 on Linux with NVIDIA;
-  CPU processing is available on both systems.
+Windows includes the DirectML correction from the earlier releases; a fresh
+1.08 DirectML image comparison has not been completed. If a GPU job fails or
+produces unexpected output, select CPU and retain the processing log.
+Linux AMD/Intel GPU execution and Windows CUDA are not provided by these builds.
+On Wayland, use **Open image**; drag-and-drop remains limited.
 
-## Inspiration and thanks
+## Models, licences and acknowledgements
 
-[Upscayl](https://github.com/upscayl/upscayl) was the original spark for UpScape.
+The baseline includes Real-ESRGAN/Real-ESRNet models by Xintao Wang and
+contributors (BSD-3-Clause), and HFA2k by helaman / Philip Hofmann (CC-BY-4.0).
+**Remacri and UltraSharp are optional NonCommercial models** (CC-BY-NC-SA-4.0).
+Their weights and graphs are absent from both downloads and disabled by default.
+An explicit in-app request and licence confirmation are required; downloading
+does not remove their NonCommercial restrictions.
 
-A heartfelt thank you to the Upscayl team and all contributors for this wonderful project,
-for sharing your work with the community, and for inspiring us to develop UpScape.
+[Upscayl](https://github.com/upscayl/upscayl) was one of UpScape's inspirations.
+Selected aspects of its model catalogue and packaged-weight handling informed
+early research. Warm thanks to its team and contributors, and to all model
+authors. The [full acknowledgements](LICENSES/ACKNOWLEDGEMENTS.md) identify every
+catalogue model, its author, source and licence. Original licence texts and
+copyright notices accompany the binary packages.
 
-## Models and licences
-
-The package includes prepared models from Real-ESRGAN and 4x-HFA2k. Original model weights
-are downloaded from their publishers when needed. Each model's licence is shown in Setup.
-
-The optional Remacri and UltraSharp models are **NonCommercial (CC BY-NC-SA 4.0)**.
-Their weights and prepared graphs are not bundled. After the licence confirmation,
-**Download missing** downloads their weights and prepares their graphs on your computer.
-
-UpScape's own code is MIT, Copyright (c) 2026 Silvestar Friedrich ([LICENSE](LICENSE)).
-Third-party software and models retain their own licences; notices are included in each
-download and in [LICENSES](LICENSES).
-
-## Compatibility
-
-Linux requires glibc 2.43 or newer, for example Ubuntu 26.04. On Wayland, use **File > Open**
-to select images because dropping files onto the window is not supported yet.
-
-Windows GPU processing has been tried on NVIDIA hardware. AMD and Intel DirectX 12 cards
-are supported through DirectML but have not been tested with UpScape. If GPU processing
-fails, select **CPU** in Setup and consult [INSTALL.md](INSTALL.md).
-
-This repository distributes UpScape releases and user documentation. The application
-source code is maintained separately and is not included here.
+This repository distributes binary packages, user documentation and notices.
+Application source code is maintained privately. GitHub's automatically generated
+source archives contain this public documentation repository, not the UpScape
+application source. UpScape's own licence is [MIT](LICENSE); third-party
+software and models retain their respective licences.
