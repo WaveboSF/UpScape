@@ -1,4 +1,4 @@
-# UpScape 1.08 binary distribution and public documentation.
+# UpScape 1.08 binary distribution and public documentation; refreshed 2026-10-25.
 # Program downloads and checksums belong to GitHub Releases.
 *.tar.gz
 *.zip
@@ -14,3 +14,8 @@
 
 # Local session handovers are not part of the public download documentation.
 /HANDOVER*.md
+
+# Private local release preparation stays outside the public repository.
+/prepared/
+/PREPARED_*.md
+/release-manifest*.json

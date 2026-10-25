@@ -2,8 +2,7 @@
 
 Download one package for your operating system from the
 [1.08 release](https://github.com/WaveboSF/UpScape/releases/tag/v1.08), together
-with its matching `.sha256` file. Both packages store the precise build identity
-1.08.03 and display the public release label 1.08.
+with its matching `.sha256` file. Both packages belong to public release 1.08.
 
 ## Requirements
 
@@ -41,14 +40,16 @@ replacement for a dedicated GPU. No future CPU generation is guaranteed here.
 2. Run `UpScape-1.08-windows-x64-setup.exe`. The installer is currently unsigned;
    Windows may display a SmartScreen warning. Verify the download before choosing
    to continue.
-3. Choose a current-user installation or, when running elevated, an all-users
-   installation. Setup checks mandatory OS/runtime requirements and can install
-   the included Microsoft Visual C++ runtime after verifying its signature.
-   Optional GPU support does not block CPU installation.
-4. Start UpScape from the Start menu or desktop shortcut. No first-use download
-   is needed for the included baseline. The optional, initially unchecked check
-   for a newer stable UpScape package keeps the bundled version when offline,
-   declined or unsuccessful.
+3. If UpScape is already registered, choose **Yes** to update it in its existing
+   folder and installation mode, or **No** to close setup. Close UpScape before
+   updating. For a first installation, choose the installation mode and use
+   **Installation folder > Browse** to select a folder on any drive.
+4. Setup checks mandatory OS/runtime requirements and can install the included
+   Microsoft Visual C++ runtime after verifying its signature. Optional GPU
+   support does not block CPU installation.
+5. Start UpScape from the Start menu or desktop shortcut. No first-use download
+   is needed for the included baseline. The optional, initially unchecked release
+   check quietly keeps the bundled version when offline or unsuccessful.
 
 Keep all installed DLLs, data, models and notices together. Settings are under
 `%APPDATA%\upscape`; downloaded weights/prepared optional models are under
@@ -61,7 +62,8 @@ removal. It asks before removing user settings and downloaded models.
 
    ```sh
    sha256sum -c UpScape-1.08-linux-x86_64.tar.gz.sha256
-   tar -xzf UpScape-1.08-linux-x86_64.tar.gz
+   mkdir -p UpScape-1.08-linux-x86_64
+   tar -xzf UpScape-1.08-linux-x86_64.tar.gz --strip-components=1 -C UpScape-1.08-linux-x86_64
    cd UpScape-1.08-linux-x86_64
    ```
 

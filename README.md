@@ -1,4 +1,4 @@
-# UpScape
+# UpScape 1.08
 
 **A desktop image upscaler for Windows and Linux.** Enlarge photos and other
 images with AI or classical filters, blend their results, and compare alternatives
@@ -35,12 +35,15 @@ at least eight verified physical CPU cores are required and a warning is shown.
 - Complete offline baseline and expanded library licence texts and model credits.
 - Improved GPU handling, DirectML fixes, CPU thread limits that leave capacity
   for the OS/UI, and hardware prerequisites under **Info > System info**.
+- Automatic Tile adapts GPU tiles to available memory and remembers successful sizes.
 - Eight saved setups, S1-S8, and a clearer Batch workbench with thumbnails,
   selected files and reusable processing settings.
 - Easier ROI selection, cropping and transparent cutouts; more flexible Save
   formats and filename templates.
 - A larger watermark editor with installed fonts, size/position/rotation controls,
   color palettes and direct manipulation; improved window-state handling.
+
+- A compact Image Adjustments window and setup that updates an existing installation.
 
 See the [1.08 release notes](docs/RELEASE_NOTES_1.08.md) for download details.
 

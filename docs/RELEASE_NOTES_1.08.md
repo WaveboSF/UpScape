@@ -14,11 +14,15 @@ cutouts, flexible Save naming/formats and the larger watermark editor make the
 image workflow more direct. Info > System info shows requirements, detected
 components and next steps; window-state handling has also improved.
 
+- Automatic Tile adapts GPU tiles to available memory and remembers successful sizes.
+- Compact Image Adjustments with stable window geometry.
+- Setup offers an update of the existing installation and quietly supports offline use.
+
 ## Downloads
 
 - `UpScape-1.08-windows-x64-setup.exe`: native x64 Windows installer, CPU/DirectML.
 - `UpScape-1.08-linux-x86_64.tar.gz`: Linux x86-64, CPU/optional NVIDIA CUDA.
-- Each package has a matching `.sha256` file. Both store internal build 1.08.03.
+- Each package has a matching `.sha256` file.
 
 The public repository contains downloads, documentation and notices; the
 application source remains private. No separate model pack or Python is needed.
