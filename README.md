@@ -59,11 +59,12 @@ On Wayland, use **Open image**; drag-and-drop remains limited.
 
 ## Contributors
 
-UpScape is developed and maintained by [S.F. / WaveboSF](https://github.com/WaveboSF).
-Development has been assisted by **Anthropic Claude** and **[OpenAI Codex](https://github.com/codex)**.
-We acknowledge both AI tools for their contributions to implementation,
-troubleshooting, testing and documentation. Project decisions and release
-responsibility remain with the maintainer.
+UpScape is built and maintained by [S.F. / WaveboSF](https://github.com/WaveboSF),
+with plenty of help from **Anthropic Claude** and [**OpenAI Codex**](https://github.com/codex).
+These advanced coding tools are part of the daily toolbox—from turning ideas
+into code to tracking down stubborn bugs, testing and writing the docs. The
+maintainer sets the direction, decides what ships—and occasionally says,
+“No, that’s not what I meant,” because otherwise we’d hit an iceberg.
 
 ## Models, licences and acknowledgements
 
