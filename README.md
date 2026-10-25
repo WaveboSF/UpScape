@@ -6,6 +6,10 @@ before saving. Microscopy and object images are among its uses.
 
 **[Download UpScape 1.08](https://github.com/WaveboSF/UpScape/releases/tag/v1.08)**
 
+![UpScape 1.08 on Linux: empty workspace](docs/images/upscape-1.08-linux.png)
+
+*UpScape 1.08 on Linux — the empty workspace before opening an image.*
+
 | Platform | Download | Checksum |
 |---|---|---|
 | Windows 10/11, x64 | [Installer](https://github.com/WaveboSF/UpScape/releases/download/v1.08/UpScape-1.08-windows-x64-setup.exe) | [SHA-256](https://github.com/WaveboSF/UpScape/releases/download/v1.08/UpScape-1.08-windows-x64-setup.exe.sha256) |
