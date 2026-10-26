@@ -22,6 +22,8 @@ components and next steps; window-state handling has also improved.
 - Batch previews up to 128 megapixels, retaining the current Classical, AI or
   Compare view and the prepared processing settings.
 - Save, Save as and Copy toolbar icons, available as soon as an image is open.
+- A smaller, more responsive factor slider and a separate System info window
+  with readable tables that adapt to the window width.
 
 ## Downloads
 

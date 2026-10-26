@@ -48,6 +48,8 @@ at least eight verified physical CPU cores are required and a warning is shown.
 - Batch previews for images up to 128 megapixels, with the current Classical,
   AI or Compare view preserved when opening and starting Batch.
 - Save, Save as and Copy toolbar icons, with reliable loaded-image access.
+- A smaller, more responsive factor slider and a separate System info window
+  with readable tables that adapt to the window width.
 
 See the [1.08 release notes](docs/RELEASE_NOTES_1.08.md) for download details.
 
