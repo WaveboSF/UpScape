@@ -6,9 +6,9 @@ before saving. Microscopy and object images are among its uses.
 
 **[Download UpScape 1.08](https://github.com/WaveboSF/UpScape/releases/tag/v1.08)**
 
-![UpScape 1.08 on Linux: empty workspace](docs/images/upscape-1.08-linux.png)
+![UpScape 1.08 on Linux: current empty workspace with W/H and AR controls](docs/images/upscape-1.08-linux.png)
 
-*UpScape 1.08 on Linux — the empty workspace before opening an image.*
+*UpScape 1.08 on Linux — the current empty workspace, including exact-size W/H and AR controls.*
 
 | Platform | Download | Checksum |
 |---|---|---|
@@ -42,8 +42,12 @@ at least eight verified physical CPU cores are required and a warning is shown.
   formats and filename templates.
 - A larger watermark editor with installed fonts, size/position/rotation controls,
   color palettes and direct manipulation; improved window-state handling.
-
 - A compact Image Adjustments window and setup that updates an existing installation.
+- Exact output width and height with AR on/off, within 1–4× of the current
+  image or crop; one optional pixel target for all Batch files.
+- Batch previews for images up to 128 megapixels, with the current Classical,
+  AI or Compare view preserved when opening and starting Batch.
+- Save, Save as and Copy toolbar icons, with reliable loaded-image access.
 
 See the [1.08 release notes](docs/RELEASE_NOTES_1.08.md) for download details.
 

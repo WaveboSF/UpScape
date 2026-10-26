@@ -17,6 +17,11 @@ components and next steps; window-state handling has also improved.
 - Automatic Tile adapts GPU tiles to available memory and remembers successful sizes.
 - Compact Image Adjustments with stable window geometry.
 - Setup offers an update of the existing installation and quietly supports offline use.
+- Exact output width and height with AR on/off, within 1–4× of the current
+  image or crop; optional pixel targets shared by all Batch files.
+- Batch previews up to 128 megapixels, retaining the current Classical, AI or
+  Compare view and the prepared processing settings.
+- Save, Save as and Copy toolbar icons, available as soon as an image is open.
 
 ## Downloads
 
