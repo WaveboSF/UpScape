@@ -20,6 +20,16 @@ original weight files and six prepared model bundles. The baseline works offline
 no separate model pack or Python installation is required.
 Read [installation and requirements](INSTALL.md) before downloading.
 
+## AI hardware and processing time
+
+**AI mode places higher demands on your hardware than classical filters.**
+Without a compatible GPU and working GPU acceleration, processing runs on the
+CPU and can take many minutes or considerably longer, especially with large
+images, demanding models, Variants or Batch jobs. Long calculation times on
+such systems are expected; a GPU being present does not necessarily mean that
+UpScape can use it. Check **Info > System info** and the processing log for the
+available hardware and the backend actually used.
+
 ## Blend and Variants
 
 **Blend** lets you mix the AI result with the original or a classical filter,
