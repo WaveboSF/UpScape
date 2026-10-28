@@ -52,7 +52,8 @@ at least eight verified physical CPU cores are required and a warning is shown.
   formats and filename templates.
 - A larger watermark editor with installed fonts, size/position/rotation controls,
   color palettes and direct manipulation; improved window-state handling.
-- A compact Image Adjustments window and setup that updates an existing installation.
+- Improved Image Adjustments with synchronized previews and a Color tune switch.
+- Setup updates an existing installation.
 - Exact output width and height with AR on/off, within 1–4× of the current
   image or crop; one optional pixel target for all Batch files.
 - Batch previews for images up to 128 megapixels, with the current Classical,

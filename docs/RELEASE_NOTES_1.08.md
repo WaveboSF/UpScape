@@ -15,7 +15,7 @@ image workflow more direct. Info > System info shows requirements, detected
 components and next steps; window-state handling has also improved.
 
 - Automatic Tile adapts GPU tiles to available memory and remembers successful sizes.
-- Compact Image Adjustments with stable window geometry.
+- Improved Image Adjustments with synchronized previews and a Color tune switch.
 - Setup offers an update of the existing installation and quietly supports offline use.
 - Exact output width and height with AR on/off, within 1–4× of the current
   image or crop; optional pixel targets shared by all Batch files.
